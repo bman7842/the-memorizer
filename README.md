@@ -66,23 +66,23 @@ Here's a walkthrough of implemented user stories:
     - For adding stroke to error message
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[One of the biggest challenges I came across was adding the scalability of buttons. What made this difficult was that you couldn't add psuedo classes directly to the elements you create with JavaScript
+- One of the biggest challenges I came across was adding the scalability of buttons. What made this difficult was that you couldn't add psuedo classes directly to the elements you create with JavaScript
 therefore the only feasible way to manage when a user clicked them without using JavaScript was to create all the possible CSS button id's and give them their given color when clicked property. In my project,
 it is clear I could've just done this by adding button1-10 and their specified color and then just assign those id's when creating them in JavaScript, however I was against this because I wanted the game to be scalable.
 Eventually, I would create a color and frequency generator, in which case the buttons could go from 1-x, where x could be any value greater than 1. In theory, this could currently be implemented now if I made the change to the buttonGenerator function
 where it goes back to the beginning of the color map once reaching the end (colors would repeat after 10 buttons). In order to allow for this endless generation of buttons I used the mousedown and mouseup properties to call a JavaScript function that would then change the color
 according to the given button id the element had been assigned. This allowed for me to create a similar effect to the browser handling the button interaction. I followed the format of the frequency map to create a color map
 which assigned color-when-pressed to the color-when-not-pressed (i.e. color-when-not-pressed: color-when-pressed). While I'm not a huge fan of using JavaScript to handle this interaction, the solution seems to work fairly reliably
-although I'm not sure entirely the performance tradeoffs of using this method over the orignal css stylesheet handling the click color change, but overall this solution seems to do the job for this game.]
+although I'm not sure entirely the performance tradeoffs of using this method over the orignal css stylesheet handling the click color change, but overall this solution seems to do the job for this game.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-While working on this project and doing lots of googling on how to implement certain features into the game, I came across many mentions to libraries like React and things like bootstrap. I have lots of questions regarding these
+- While working on this project and doing lots of googling on how to implement certain features into the game, I came across many mentions to libraries like React and things like bootstrap. I have lots of questions regarding these
 libraries, and more specifically how to get into interactive and response web development. I also have always wanted to learn more about how websites like Twitter/Facebook or any website where the majority of the content
 displayed to the user is custom to the user are created. We all use the same url (twitter.com) to get the website, so how are the able to make the site different according to the account signed in. I'd really like to see how this
 data is streamed to the page for the user, and generated in such a structural way that it can vary depending on many factors.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
--If I had more time, I'd like to make the colors and frequency of tone per button generated automatically. This would allow the max number of buttons generated to go above 10 and in theory to any number of buttons you
+- If I had more time, I'd like to make the colors and frequency of tone per button generated automatically. This would allow the max number of buttons generated to go above 10 and in theory to any number of buttons you
 would like. If the randomly generated colors and tones are not very 'attractive', I would instead implement a way for the buttons to start over in the frequency and color map and start repeating colors and frequencies when
 it goes to a number of buttons greater than the entries in the map. Lastly, I'd like to make a lot more changes to the overall look of the website. Most importantly, I want to tinker with the css to allow for all elements
 to be seen on the screen by the user no matter the window size (within reason). Buttons would shrink and enlarge to fit the window that way the user never would need to scroll to see all the buttons on larger games.
