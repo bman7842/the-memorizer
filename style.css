@@ -1,0 +1,57 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  text-align: center;
+  background-color: slategrey;
+  color: white;
+}
+
+h1 {
+  font-family: verdana, arial, sans-serif;
+  font-style: italic;
+  color: #373fff;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  max-width: 200px;
+  width: 40%;
+  min-width: 100px;
+  aspect-ratio: 1;
+  margin: 2px;
+}
+
+#gameControls {
+  padding:25px
+}
+
+#gameControls > input {
+  width: 30px;
+  color: red;
+}
+
+
+.hidden {
+  display: none;
+}
+
+#error, #countdown {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #ff0000;
+  font-size: 30px;
+  -webkit-text-stroke: 1px black;
+}
+
+#error > #errorMsg {
+  -webkit-text-stroke-width: 0px;
+}
+
+#error > #colon {
+  color: black;
+}

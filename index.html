@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The Memorizer</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body onload = "startup()">
+    <h1>The Memorizer</h1>
+    
+    <p>
+      Welcome to the memeorizer! A game that tests your ability to memorize sequences and patterns.
+      <br><br>
+      Press start to play, you can select how many boxes you would like. (more boxes = more difficulty)
+    </p>
+    
+    <div id = "gameControls">
+      <button id="startBtn" onclick="startGame()">Start</button>
+      <button class="hidden" id="stopBtn" onclick="stopGame()">Stop</button>
+      <label>with </label>
+      <input id="numBoxesInput" type="number" value="4" min="2" max ="10">
+      <label>boxes</label>
+    </div>
+    
+    <div id = "error" class="hidden">
+      <span><b>INCORRECT</b></span><span id = "colon"><b>:</b></span>
+      <i><span id = "errorMsg"> error </span></i>
+    </div>
+    
+    <div id = "gameButtonArea">
+    
+    </div>
+    
+    <p id = "countdown" class = "hidden">You have 0 seconds remaining</p>
+    
+  </body>
+</html>
